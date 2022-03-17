@@ -185,12 +185,16 @@
                     height: 56px;
                     background: #FF7E1B;
                     border-radius: 10px;
-                    :hover {
+                    transition: 0.3s;
+                    &:active {
                         box-shadow: 0px 20px 50px -20px #FF7E1B;
+                        background: #FFAB6A;
+                        transition: 0.3s;
                     }
                     .section__right-bottom-right-btn {
                         margin: 0 auto;
                         color: white;
+                        align-items: center;                      
                     }
                 }
             }

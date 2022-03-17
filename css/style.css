@@ -246,15 +246,23 @@
   height: 56px;
   background: #FF7E1B;
   border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.container section .section__right .section__right-bottom .section__right-bottom-right :hover {
+.container section .section__right .section__right-bottom .section__right-bottom-right:active {
   -webkit-box-shadow: 0px 20px 50px -20px #FF7E1B;
           box-shadow: 0px 20px 50px -20px #FF7E1B;
+  background: #FFAB6A;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-right .section__right-bottom-right-btn {
   margin: 0 auto;
   color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
