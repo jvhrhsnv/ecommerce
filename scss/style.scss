@@ -36,6 +36,34 @@
             width: 600px;
             a {
                 text-decoration: none;
+                transition: 0.3s;
+            }
+            .navbar__left-section {
+                margin: 0 5px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    background-color: #FF7E1B;
+                    opacity: 0;
+                    transition: 0.5s;
+                    top: 69px;
+                    left: 0px;
+                    
+                }
+                &:hover{
+                    &::after {
+                        opacity: 1;
+                        transition: 0.5s;
+                        width: 100%;
+                    }
+                }
+                a:hover {
+                    color: #FF7E1B;
+                    transition: 0.3s;
+                }
             }
         }
         .navbar__right {
@@ -51,6 +79,7 @@
                 .profile-img {
                     width: 50px;
                     height: 50px;
+                    cursor: pointer;
                 }
             }
         }
@@ -61,7 +90,7 @@
         height: 1px;
         background-color: #E4E9F2;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 90px;
     }
 
 
@@ -84,6 +113,7 @@
                     width: 445px;
                     height: 445px;
                     border-radius: 15px;
+                    cursor: pointer;
                 }
             }
             .section__left-bottom {
@@ -96,6 +126,7 @@
                     img {
                         width: 88px;
                         border-radius: 10px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -106,6 +137,8 @@
             .section__right-top {
                 margin-top: 62px;
                 margin-bottom: 32px;
+                cursor: default;
+                user-select: none;
                 h3 {
                     font-weight: 700;
                     font-size: 13px;
@@ -185,11 +218,11 @@
                     height: 56px;
                     background: #FF7E1B;
                     border-radius: 10px;
-                    transition: 0.3s;
+                    transition: 0.1s;
                     &:active {
                         box-shadow: 0px 20px 50px -20px #FF7E1B;
                         background: #FFAB6A;
-                        transition: 0.3s;
+                        transition: 0.1s;
                     }
                     .section__right-bottom-right-btn {
                         margin: 0 auto;
