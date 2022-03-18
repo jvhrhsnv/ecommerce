@@ -76,7 +76,7 @@
                     img {
                         width: 20px;
                         &:hover {
-                            color: #FF7E1B;
+                            color: rgba(255, 126, 27, 0);
                         }
                     }
                 }
@@ -85,17 +85,17 @@
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                border: 0px solid #FF7E1B;
+                border: 2px solid rgba(255, 125, 26, 0);
                 transition: 0.3s;
                 box-sizing: border-box;
+                overflow: hidden;
                 &:hover {
                     border-radius: 50%;
-                    border: 2px solid #FF7E1B;
+                    border: 2px solid rgba(255, 125, 26, 1);
                     transition: 0.3s;
                 }
                 .profile-img {
-                    width: 50px;
-                    height: 50px;
+                    width: 100%;
                     cursor: pointer;
                    
                 }
