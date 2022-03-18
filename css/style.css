@@ -39,6 +39,8 @@
   line-height: 26px;
   color: #69707D;
   margin-bottom: 34px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .container .navbar .navbar__left {
@@ -104,8 +106,29 @@
   width: 100px;
 }
 
+.container .navbar .navbar__right .navbar__right-cart {
+  position: relative;
+}
+
+.container .navbar .navbar__right .navbar__right-cart .cart-img {
+  position: relative;
+}
+
+.container .navbar .navbar__right .navbar__right-cart .cart-img .cart-number {
+  position: absolute;
+  background-color: #FF7E1B;
+  border-radius: 3px;
+  width: 19px;
+  height: 13px;
+  font-size: 10px;
+  padding-left: 7px;
+  padding-top: 0px;
+  color: #fff;
+  font-weight: 700;
+}
+
 .container .navbar .navbar__right .navbar__right-cart a img {
-  width: 20px;
+  width: 21px;
 }
 
 .container .navbar .navbar__right .navbar__right-cart a img:hover {
