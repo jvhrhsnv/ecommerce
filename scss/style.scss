@@ -136,7 +136,7 @@
             }
         }
     }
-    // END section
+    // END navbar
     .hr {
         max-width: 1110px;
         height: 1px;
@@ -299,6 +299,7 @@
                 }
             }
         }
+        // START section
         section {
             flex-direction: column;
             align-items: center;
@@ -310,6 +311,30 @@
                 display: flex;
                 .section__left-bottom {
                     display: none;
+                }
+            }
+            .section__right {
+                width: 375px;
+                .section__right-top {
+                    margin-top: 24px;
+                    margin-bottom: 16px;
+                    h3 {
+                        font-size: 12px;
+                        line-height: 15px;
+                        margin-bottom: 16px;
+                    }
+                    h1 {
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                    .section__right-top-price-left {
+                        font-size: 28px;
+                        line-height: 35px;
+                    }
                 }
             }
         }

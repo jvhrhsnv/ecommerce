@@ -395,5 +395,29 @@
   .container section .section__left .section__left-bottom {
     display: none;
   }
+  .container section .section__right {
+    width: 375px;
+  }
+  .container section .section__right .section__right-top {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  .container section .section__right .section__right-top h3 {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 16px;
+  }
+  .container section .section__right .section__right-top h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .container section .section__right .section__right-top p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .container section .section__right .section__right-top .section__right-top-price-left {
+    font-size: 28px;
+    line-height: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
