@@ -372,5 +372,9 @@
         flex-wrap: wrap;
     margin: 0px 10px;
   }
+  .container section .section__left {
+    width: 375px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
