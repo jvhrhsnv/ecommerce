@@ -281,10 +281,20 @@
 
 
 @media screen and (max-width: 767px) {
-    section {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0px 10px;
+    .container {
+        .navbar {
+            .navbar__left {
+                .navbar__left-section {
+                    display: none;
+                }
+            }
+        }
+        section {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0px 10px;
+        }
     }
+   
 }

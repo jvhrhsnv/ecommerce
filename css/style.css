@@ -357,7 +357,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  section {
+  .container .navbar .navbar__left .navbar__left-section {
+    display: none;
+  }
+  .container section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
