@@ -71,15 +71,33 @@
             justify-content: space-between;
             align-items: center;
             width: 100px;
-            // .navbar__right-cart {
-
-            // }
+            .navbar__right-cart {
+                a {
+                    img {
+                        width: 20px;
+                        &:hover {
+                            color: #FF7E1B;
+                        }
+                    }
+                }
+            }
             .navbar__right-profile {
-                
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 0px solid #FF7E1B;
+                transition: 0.3s;
+                box-sizing: border-box;
+                &:hover {
+                    border-radius: 50%;
+                    border: 2px solid #FF7E1B;
+                    transition: 0.3s;
+                }
                 .profile-img {
                     width: 50px;
                     height: 50px;
                     cursor: pointer;
+                   
                 }
             }
         }
