@@ -392,6 +392,9 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .container section .section__left .section__left-bottom .section__left-bottom-img {
+    display: none;
+  }
   .container section .section__right {
     width: 375px;
   }

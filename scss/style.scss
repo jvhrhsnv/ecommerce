@@ -310,7 +310,9 @@
                 margin: 0 auto;
                 display: flex;
                 .section__left-bottom {
-                    // x    
+                    .section__left-bottom-img {
+                        display: none;
+                    }
                 }
             }
             .section__right {
