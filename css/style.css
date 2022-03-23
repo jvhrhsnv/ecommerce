@@ -373,6 +373,9 @@
   .container .navbar .navbar__left .navbar__left-section {
     display: none;
   }
+  .container .hr {
+    display: none;
+  }
   .container section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -391,6 +394,13 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .container section .section__left .section__left-top {
+    margin: 0;
+  }
+  .container section .section__left .section__left-top img {
+    width: 375px;
+    border-radius: 0;
   }
   .container section .section__left .section__left-bottom .section__left-bottom-img {
     display: none;
