@@ -35,9 +35,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 600px;
+            width: 600px;            
             a {
                 text-decoration: none;
+                color: #69707D;
                 transition: 0.3s;
             }
             .navbar__left-section {
@@ -69,14 +70,16 @@
             }
         }
         .navbar__right {
+            font-family: kumbhSansBold;
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100px;
+            position: relative;
             .navbar__right-cart {               
-                position: relative;                
+                // position: relative;                
                 .cart-img {
-                    position: relative;
+                    // position: relative;
                     .cart-number {
                         position: absolute;
                         background-color: #FF7E1B;
@@ -99,13 +102,6 @@
                         }
                     }
                 }
-                // .cart {
-                //     width: 360px;
-                //     height: 256px;
-                //     background-color: #FFAB6A;
-
-                    
-                // }
                 a {
                     img {
                         width: 21px;
@@ -113,6 +109,35 @@
                             color: rgba(255, 126, 27, 0);
                         }
                     }
+                }
+            }
+            .cart {
+                position: absolute;
+                width: 360px;
+                min-height: 256px;
+                background: #FFFFFF;
+                box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+                border-radius: 10px;
+                right: 0px;
+                top: 70px;
+                .cart-p {
+                    color: #1D2026;
+                    margin-bottom: 27px;
+                    margin-left: 24px;
+                    margin-top: 24px;                    
+                    font-size: 16px;                   
+                }
+                .cart-hr {
+                    width: 360px;
+                    height: 2px;
+                    background: #E4E9F2;
+                }
+                .cart-description {
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: #69707D;
+                    margin-top: 70px;
                 }
             }
             .navbar__right-profile {
@@ -292,6 +317,7 @@
 
 @media screen and (max-width: 767px) {
     .container {
+        width: 100%;
         .navbar {
             .navbar__left {
                 .navbar__left-section {
@@ -313,10 +339,13 @@
                 margin: 0 auto;
                 display: flex;
                 .section__left-top {
-                    margin: 0;
+                  width: 375px;
+                  margin: 0;
+                  padding: 0;        
                    img {
                     width: 375px;                   
                     border-radius: 0;
+                    margin: 0 auto;
                    }
                 }
                 .section__left-bottom {
@@ -343,9 +372,25 @@
                         font-size: 15px;
                         line-height: 25px;
                     }
-                    .section__right-top-price-left {
-                        font-size: 28px;
-                        line-height: 35px;
+                    .section__right-top-price {
+                        display: flex;
+                        .section__right-top-price-left {
+                            font-size: 28px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+                .section__right-bottom {
+                    // display: flex;
+                    // flex-direction: column;
+                    margin: 0 24px;
+                    flex-wrap: wrap;
+                    .section__right-bottom-left {
+                        width: 100%;
+                        margin-bottom: 16px;
+                    }
+                    .section__right-bottom-right {
+                        width: 100%;
                     }
                 }
             }
