@@ -120,6 +120,13 @@
                 border-radius: 10px;
                 right: 0px;
                 top: 70px;
+                display: flex;
+                .cart-small-img {
+                   img {
+                    width: 50px;
+                    height: 50px;
+                   }
+                }
                 .cart-p {
                     color: #1D2026;
                     margin-bottom: 27px;
@@ -156,7 +163,6 @@
                 .profile-img {
                     width: 100%;
                     cursor: pointer;
-                   
                 }
             }
         }
@@ -322,6 +328,12 @@
             .navbar__left {
                 .navbar__left-section {
                     display: none;
+                }
+            }
+            .navbar__right {
+                width: 100%;
+                .cart {
+                    width: 370px;
                 }
             }
         }

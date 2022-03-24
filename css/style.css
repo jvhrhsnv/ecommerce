@@ -153,6 +153,14 @@
   border-radius: 10px;
   right: 0px;
   top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .navbar .navbar__right .cart .cart-small-img img {
+  width: 50px;
+  height: 50px;
 }
 
 .container .navbar .navbar__right .cart .cart-p {
@@ -404,6 +412,12 @@
   }
   .container .navbar .navbar__left .navbar__left-section {
     display: none;
+  }
+  .container .navbar .navbar__right {
+    width: 100%;
+  }
+  .container .navbar .navbar__right .cart {
+    width: 370px;
   }
   .container .hr {
     display: none;
