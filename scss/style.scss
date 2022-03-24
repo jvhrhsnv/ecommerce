@@ -120,31 +120,55 @@
                 border-radius: 10px;
                 right: 0px;
                 top: 70px;
-                display: flex;
-                .cart-small-img {
-                   img {
-                    width: 50px;
-                    height: 50px;
-                   }
+                .cart-empty {
+                    .cart-p {
+                        color: #1D2026;
+                        margin-bottom: 27px;
+                        margin-left: 24px;
+                        margin-top: 24px;                    
+                        font-size: 16px;                   
+                    }
+                    .cart-hr {
+                        width: 360px;
+                        height: 2px;
+                        background: #E4E9F2;
+                    }
+                    .cart-description {
+                        font-size: 16px;
+                        line-height: 26px;
+                        text-align: center;
+                        color: #69707D;
+                        margin-top: 70px;
+                    }
                 }
-                .cart-p {
-                    color: #1D2026;
-                    margin-bottom: 27px;
-                    margin-left: 24px;
-                    margin-top: 24px;                    
-                    font-size: 16px;                   
-                }
-                .cart-hr {
-                    width: 360px;
-                    height: 2px;
-                    background: #E4E9F2;
-                }
-                .cart-description {
-                    font-size: 16px;
-                    line-height: 26px;
-                    text-align: center;
-                    color: #69707D;
-                    margin-top: 70px;
+                .cart-full {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    min-width: 312px;
+                    font-family: kumbhSansRegular;
+                    .cart-small-img {
+                        img {
+                         width: 50px;
+                         height: 50px;
+                         border-radius: 4px;
+                        }
+                     }
+                     .cart-middle-text {
+                         display: flex;
+                         flex-direction: column;
+                         font-size: 16px;
+                        line-height: 26px;
+                        /* identical to box height, or 162% */
+
+
+                        color: #69707D;
+                     }
+                     .cart-trash {
+                         &:hover {
+                             color: #FF7E1B;
+                         }
+                     }
                 }
             }
             .navbar__right-profile {
