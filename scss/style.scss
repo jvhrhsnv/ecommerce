@@ -16,6 +16,7 @@
     height: 900px;
     margin: 0 auto;
     // START navbar
+    position: relative;
     .navbar {
         // width: 1110px;
         height: 50px;
@@ -35,7 +36,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 600px;            
+            width: 600px;           
             a {
                 text-decoration: none;
                 color: #69707D;
@@ -77,7 +78,7 @@
             width: 100px;
             position: relative;
             .navbar__right-cart {               
-                // position: relative;                
+                // position: relative;                     
                 .cart-img {
                     // position: relative;
                     .cart-number {
@@ -120,6 +121,7 @@
                 border-radius: 10px;
                 right: 0px;
                 top: 70px;
+                // display: none;
                 .cart-empty {
                     .cart-p {
                         color: #1D2026;
@@ -144,6 +146,7 @@
                 .cart-full {
                     display: flex;
                     justify-content: space-around;
+                    flex-wrap: wrap;
                     align-items: center;
                     min-width: 312px;
                     font-family: kumbhSansRegular;
@@ -158,15 +161,30 @@
                          display: flex;
                          flex-direction: column;
                          font-size: 16px;
-                        line-height: 26px;
-                        /* identical to box height, or 162% */
-
-
-                        color: #69707D;
+                         line-height: 26px;
+                         color: #69707D;
                      }
                      .cart-trash {
                          &:hover {
                              color: #FF7E1B;
+                         }
+                     }
+                     .cart-btn {
+                         width: 312px;
+                         height: 56px;
+                         background-color: #FF7E1B;
+                         border-radius: 10px;
+                         align-items: center;
+                         margin: 0 auto;
+                         margin-bottom: 20px;
+                         p {
+                            font-size: 16px;
+                            line-height: 20px;                            
+                            color: #FFFFFF;
+                            font-family: kumbhSansBold;
+                            align-items: center;
+                            padding-left: 120px;
+                            padding-top: 15px;
                          }
                      }
                 }
@@ -318,6 +336,20 @@
                     height: 56px;
                     background: #F6F8FD;
                     border-radius: 10px;
+                    .counter-value {
+                        input {
+                            width: 20px;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                    .counter-minus, .counter-plus {
+                        i {
+                            &:active {
+                                color: #FF7E1B;
+                            }
+                        }
+                    }
                 }
                 .section__right-bottom-right {
                     display: flex;
@@ -341,23 +373,76 @@
             }
         }
     }
+
+    // FOOTER
+    footer {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        top: 0;
+        // left: 350px;
+        z-index: 99;    
+        display: none;
+        width: 100%;
+        height: 650px;
+        .section__left {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            // margin: 0 auto;
+            .section__left-top {
+                margin-bottom: 32px;
+                img {
+                    width: 445px;
+                    height: 445px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+            }
+            .section__left-bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 445px;
+                .section__left-bottom-img {
+                    width: 88px;
+                    height: 88px;
+                    img {
+                        width: 88px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 
 
 @media screen and (max-width: 767px) {
     .container {
         width: 100%;
+        margin: 0;
         .navbar {
             .navbar__left {
+                .navbar-hamburger {
+                    div {
+                        width: 30px;
+                        height: 5px;
+                        background-color: gray;
+                        margin-bottom: 5px;
+                    }
+                } 
+                width: 50%;
                 .navbar__left-section {
                     display: none;
                 }
             }
             .navbar__right {
-                width: 100%;
+                width: 25%;
                 .cart {
-                    width: 370px;
+                    min-width: 370px;
                 }
             }
         }
@@ -366,20 +451,21 @@
         }
         // START section
         section {
+            width: 100%;
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
-            margin: 0px 10px;
+            // margin: 0px 10px;
             .section__left {
-                width: 375px;
+                // width: 375px;
                 margin: 0 auto;
                 display: flex;
                 .section__left-top {
-                  width: 375px;
+                  width: 100%;
                   margin: 0;
                   padding: 0;        
                    img {
-                    width: 375px;                   
+                                       
                     border-radius: 0;
                     margin: 0 auto;
                    }
