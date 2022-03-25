@@ -96,6 +96,14 @@
                         color: #fff;
                         font-weight: 700;
                         left: 20px;
+                        input {
+                            width: 20px;
+                            outline: none;
+                            border: none;
+                            color: white;
+                            background-color: transparent;
+                            padding-left: 4px;
+                        }
                     }
                     a {
                         img {
@@ -342,13 +350,16 @@
                     border-radius: 10px;
                     .counter-value {
                         input {
-                            width: 20px;
+                            width: 25px;
                             border: none;
                             outline: none;
+                            font-size: 20px;
+                            font-weight: bold;
                         }
                     }
                     .counter-minus, .counter-plus {
                         i {
+                            font-weight: bold;
                             &:active {
                                 color: #FF7E1B;
                             }
@@ -440,6 +451,7 @@ footer {
                     &:active {
                         background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
                         border: 3px solid #FF7E1B;
+                        transition: 0.3s;
                     }
                 }
             }

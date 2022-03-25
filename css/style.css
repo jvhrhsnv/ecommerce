@@ -132,6 +132,15 @@
   left: 20px;
 }
 
+.container .navbar .navbar__right .navbar__right-cart .cart-img .cart-number input {
+  width: 20px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  padding-left: 4px;
+}
+
 .container .navbar .navbar__right .navbar__right-cart .cart-img a img {
   width: 32px;
 }
@@ -438,9 +447,15 @@
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-left .counter-value input {
-  width: 20px;
+  width: 25px;
   border: none;
   outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container section .section__right .section__right-bottom .section__right-bottom-left .counter-minus i, .container section .section__right .section__right-bottom .section__right-bottom-left .counter-plus i {
+  font-weight: bold;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-left .counter-minus i:active, .container section .section__right .section__right-bottom .section__right-bottom-left .counter-plus i:active {
@@ -565,6 +580,8 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url(Image.png);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
   border: 3px solid #FF7E1B;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .show {
