@@ -618,7 +618,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
     display: flex;
   }
   .container section .section__left .section__left-top {
-    width: 100%;
+    max-width: 360px;
     margin: 0;
     padding: 0;
   }
@@ -673,7 +673,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   footer {
     display: none;
   }
-  footer .section__left {
+  footer .section__left, footer .opacity {
     display: none;
   }
 }

@@ -492,7 +492,7 @@ footer {
                 margin: 0 auto;
                 display: flex;
                 .section__left-top {
-                  width: ;
+                  max-width: 360px;
                   margin: 0;
                   padding: 0;        
                    img {
@@ -551,7 +551,7 @@ footer {
     }
     footer {
         display: none;
-        .section__left {
+        .section__left, .opacity {
             display: none;
             
         }
