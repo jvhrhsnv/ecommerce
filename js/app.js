@@ -52,6 +52,3 @@ tapImg2.addEventListener('click', () => {
  tapImg4.addEventListener('click', () => {   
     changeImg.src = 'images/image-product-4.jpg';
  });
-// tapImg.addEventListener('click', () => {
-//     changeImg.src = 'images/image-product-3.jpg';
-//  });

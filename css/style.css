@@ -478,6 +478,17 @@
           align-items: center;
 }
 
+.container section .section__right .section__right-bottom .section__right-bottom-right .section__right-bottom-right-btn i {
+  width: 25px;
+  color: white;
+  margin-right: 10px;
+}
+
+.container section .section__right .section__right-bottom .section__right-bottom-right .section__right-bottom-right-btn span {
+  margin-top: -10px;
+  font-family: kumbhSansRegular;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,6 +671,9 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
     width: 100%;
   }
   footer {
+    display: none;
+  }
+  footer .section__left {
     display: none;
   }
 }
