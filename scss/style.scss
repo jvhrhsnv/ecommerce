@@ -253,9 +253,9 @@
                         width: 88px;
                         border-radius: 10px;
                         cursor: pointer;
-                        &:active {
+                        &:active {                         
                             background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
-                            border: 2px solid #FF7E1B;
+                            border: 3px solid #FF7E1B;
                         }
                     }
                 }
@@ -430,7 +430,7 @@ footer {
                     cursor: pointer;
                     &:active {
                         background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(Image.png);
-                        border: 2px solid #FF7E1B;
+                        border: 3px solid #FF7E1B;
                     }
                 }
             }

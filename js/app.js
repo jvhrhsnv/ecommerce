@@ -34,4 +34,12 @@ opacity.addEventListener('click', () => {
 
 // change big photo
 
-var sectionLeftBottomImg = document.querySelector('.section__left-bottom-img');
+var tapImg = document.querySelector('.tap-img');
+    changeImg = document.querySelector('.change-img');
+
+tapImg.addEventListener('click', () => {   
+   changeImg.src = 'images/image-product-2.jpg';
+});
+// tapImg.addEventListener('click', () => {
+//     changeImg.src = 'images/image-product-3.jpg';
+//  });
