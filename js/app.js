@@ -14,3 +14,24 @@ counterMinus.addEventListener('click', () => {
         inputValue.value = inputValue - 1;
     }
 });
+
+
+// popup
+var sectionLeftTop = document.querySelector('.section__left-top');
+var footer = document.querySelector('footer');
+var opacity = document.querySelector('.opacity');
+
+sectionLeftTop.addEventListener('click', () => {
+   footer.classList.toggle('show');
+   opacity.classList.toggle('show');
+});
+
+opacity.addEventListener('click', () => {
+    footer.classList.toggle('show');
+    opacity.classList.toggle('show');
+});
+
+
+// change big photo
+
+var sectionLeftBottomImg = document.querySelector('.section__left-bottom-img');
