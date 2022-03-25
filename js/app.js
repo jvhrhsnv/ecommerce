@@ -34,12 +34,24 @@ opacity.addEventListener('click', () => {
 
 // change big photo
 
-var tapImg = document.querySelector('.tap-img');
+var tapImg1 = document.querySelector('.tap-img1'),
+    tapImg2 = document.querySelector('.tap-img2'),
+    tapImg3 = document.querySelector('.tap-img3'),
+    tapImg4 = document.querySelector('.tap-img4'),
     changeImg = document.querySelector('.change-img');
 
-tapImg.addEventListener('click', () => {   
-   changeImg.src = 'images/image-product-2.jpg';
+tapImg1.addEventListener('click', () => {   
+   changeImg.src = 'images/image-product-1.jpg';
 });
+tapImg2.addEventListener('click', () => {   
+    changeImg.src = 'images/image-product-2.jpg';
+ });
+ tapImg3.addEventListener('click', () => {   
+    changeImg.src = 'images/image-product-3.jpg';
+ });
+ tapImg4.addEventListener('click', () => {   
+    changeImg.src = 'images/image-product-4.jpg';
+ });
 // tapImg.addEventListener('click', () => {
 //     changeImg.src = 'images/image-product-3.jpg';
 //  });
