@@ -6,8 +6,8 @@ var counterPlus = document.querySelector('.counter-plus'),
 function numberPlus() {
     var i = 0;
     counterPlus.addEventListener('click', () => {
-       i++;
-       inputValue.value = i;
+       var newPlus = new Number(inputValue.value) + 1;
+       inputValue.value = newPlus;
        cartNumber.value = inputValue.value;
     });
 }
@@ -34,7 +34,7 @@ var opacity = document.querySelector('.opacity');
 sectionLeftTop.addEventListener('click', () => {
    footer.classList.toggle('show');
    opacity.classList.toggle('show');
-//    document.body.style.overflow = 'hidden';
+   document.body.style.overflow = 'hidden';
 },2000);
 
 opacity.addEventListener('click', () => {
