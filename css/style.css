@@ -592,8 +592,12 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    max-width: 767px;
     margin: 0;
+  }
+  .container .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .container .navbar .navbar__left {
     width: 50%;
@@ -627,19 +631,21 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0px 10px;
   }
   .container section .section__left {
+    width: 100%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .container section .section__left .section__left-top {
-    max-width: 360px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   .container section .section__left .section__left-top img {
+    width: 100%;
     border-radius: 0;
     margin: 0 auto;
   }
