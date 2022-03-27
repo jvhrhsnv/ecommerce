@@ -452,6 +452,13 @@
   outline: none;
   font-size: 20px;
   font-weight: bold;
+  background: #F6F8FD;
+  cursor: default;
+}
+
+.container section .section__right .section__right-bottom .section__right-bottom-left .counter-value input:active {
+  cursor: context-menu;
+  outline: none;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-left .counter-minus i, .container section .section__right .section__right-bottom .section__right-bottom-left .counter-plus i {
@@ -473,16 +480,16 @@
   height: 56px;
   background: #FF7E1B;
   border-radius: 10px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-right:active {
   -webkit-box-shadow: 0px 20px 50px -20px #FF7E1B;
           box-shadow: 0px 20px 50px -20px #FF7E1B;
   background: #FFAB6A;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-right .section__right-bottom-right-btn {
