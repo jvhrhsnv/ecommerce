@@ -500,8 +500,7 @@ footer {
 
 @media screen and (max-width: 767px) {
     .container {
-        max-width: 767px;
-        min-width: 360px;
+        max-width: 767px;        
         margin: 0;
         // overflow-x: hidden;
         margin-left: -20px;
@@ -553,7 +552,7 @@ footer {
                   margin: 0 auto;
                   padding: 0;        
                    img {
-                    width: 473px;              
+                    // width: 473px;              
                     border-radius: 0;
                     margin: 0 auto;
                    }
