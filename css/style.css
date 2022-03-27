@@ -649,7 +649,9 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
 @media screen and (max-width: 767px) {
   .container {
     max-width: 767px;
+    min-width: 360px;
     margin: 0;
+    margin-left: -10px;
   }
   .container .navbar {
     padding-left: 10px;
@@ -689,7 +691,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0px 10px;
-    margin: 0 auto;
+    padding: 0;
   }
   .container section .section__left {
     width: 100%;
@@ -703,7 +705,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
     padding: 0;
   }
   .container section .section__left .section__left-top img {
-    width: 100%;
+    width: 483px;
     border-radius: 0;
     margin: 0 auto;
   }
