@@ -672,6 +672,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   }
   .container .navbar .navbar__right .cart {
     min-width: 370px;
+    margin: 0 auto;
   }
   .container .hr {
     display: none;
@@ -688,6 +689,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0px 10px;
+    margin: 0 auto;
   }
   .container section .section__left {
     width: 100%;

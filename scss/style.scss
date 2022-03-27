@@ -523,6 +523,7 @@ footer {
                 width: 25%;
                 .cart {
                     min-width: 370px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -536,7 +537,7 @@ footer {
             align-items: center;
             flex-wrap: wrap;
             margin: 0px 10px;
-            // margin: 0 auto;
+            margin: 0 auto;
             .section__left {
                 width: 100%;
                 margin: 0 auto;
