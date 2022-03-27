@@ -163,7 +163,6 @@
   border-radius: 10px;
   right: 0px;
   top: 70px;
-  display: none;
 }
 
 .container .navbar .navbar__right .cart .cart-empty .cart-p {
@@ -201,6 +200,7 @@
           align-items: center;
   min-width: 312px;
   font-family: kumbhSansRegular;
+  margin-top: 24px;
 }
 
 .container .navbar .navbar__right .cart .cart-full .cart-small-img img {
@@ -222,6 +222,14 @@
   color: #69707D;
 }
 
+.container .navbar .navbar__right .cart .cart-full .cart-middle-text div .jami {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1D2026;
+  margin-left: 20px;
+}
+
 .container .navbar .navbar__right .cart .cart-full .cart-trash:hover {
   color: #FF7E1B;
 }
@@ -229,13 +237,37 @@
 .container .navbar .navbar__right .cart .cart-full .cart-btn {
   width: 312px;
   height: 56px;
-  background-color: #FF7E1B;
   border-radius: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
   margin-bottom: 20px;
+  background: #FF7E1B;
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-top: 26px;
+}
+
+.container .navbar .navbar__right .cart .cart-full .cart-btn:active {
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-shadow: 0px 20px 50px -20px #FF7E1B;
+          box-shadow: 0px 20px 50px -20px #FF7E1B;
+  background: #FFAB6A;
+  transition: 0.3s;
 }
 
 .container .navbar .navbar__right .cart .cart-full .cart-btn p {
@@ -301,6 +333,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 445px;
 }
 
 .container section .section__left .section__left-top {
@@ -308,8 +341,7 @@
 }
 
 .container section .section__left .section__left-top img {
-  width: 445px;
-  height: 445px;
+  width: 100%;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -321,7 +353,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 445px;
 }
 
 .container section .section__left .section__left-bottom .section__left-bottom-img {
@@ -454,11 +485,23 @@
   font-weight: bold;
   background: #F6F8FD;
   cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-left .counter-value input:active {
   cursor: context-menu;
   outline: none;
+}
+
+.container section .section__right .section__right-bottom .section__right-bottom-left .counter-minus, .container section .section__right .section__right-bottom .section__right-bottom-left .counter-plus {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-left .counter-minus i, .container section .section__right .section__right-bottom .section__right-bottom-left .counter-plus i {
@@ -482,6 +525,11 @@
   border-radius: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container section .section__right .section__right-bottom .section__right-bottom-right:active {
@@ -601,10 +649,12 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   .container {
     max-width: 767px;
     margin: 0;
+    overflow-x: hidden;
   }
   .container .navbar {
     padding-left: 10px;
     padding-right: 10px;
+    background-color: red;
   }
   .container .navbar .navbar__left {
     width: 50%;
@@ -642,7 +692,6 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   }
   .container section .section__left {
     width: 100%;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -652,15 +701,10 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
     padding: 0;
   }
   .container section .section__left .section__left-top img {
-    width: 100%;
     border-radius: 0;
-    margin: 0 auto;
   }
   .container section .section__left .section__left-bottom .section__left-bottom-img {
     display: none;
-  }
-  .container section .section__right {
-    width: 375px;
   }
   .container section .section__right .section__right-top {
     margin-top: 24px;
