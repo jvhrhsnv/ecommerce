@@ -129,7 +129,7 @@
                 border-radius: 10px;
                 right: 0px;
                 top: 70px;
-                // display: none;
+                display: none;
                 .cart-empty {
                     .cart-p {
                         color: #1D2026;
@@ -504,12 +504,13 @@ footer {
         min-width: 360px;
         margin: 0;
         // overflow-x: hidden;
-        margin-left: -10px;
+        margin-left: -20px;
         .navbar {
             padding-left: 10px;
             padding-right: 10px;            
             .navbar__left {
                 .navbar-hamburger {
+                    margin-left: 10px;
                     div {
                         width: 30px;
                         height: 5px;
@@ -552,7 +553,7 @@ footer {
                   margin: 0 auto;
                   padding: 0;        
                    img {
-                    width: 483px;              
+                    width: 473px;              
                     border-radius: 0;
                     margin: 0 auto;
                    }
