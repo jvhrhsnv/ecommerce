@@ -650,19 +650,16 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
 @media screen and (max-width: 767px) {
   .container {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
   }
   .container .navbar {
     padding-left: 10px;
     padding-right: 10px;
-    width: 90%;
+    width: 100%;
     margin: 29px auto;
   }
   .container .navbar .navbar__left {
     width: 50%;
-  }
-  .container .navbar .navbar__left .navbar-hamburger {
-    margin-left: 10px;
   }
   .container .navbar .navbar__left .navbar-hamburger div {
     width: 30px;
@@ -672,9 +669,6 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   }
   .container .navbar .navbar__left .navbar__left-section {
     display: none;
-  }
-  .container .navbar .navbar__right {
-    width: 25%;
   }
   .container .navbar .navbar__right .cart {
     min-width: 370px;
@@ -694,6 +688,7 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0 auto;
     padding: 0;
   }
   .container section .section__left {
@@ -705,9 +700,12 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   }
   .container section .section__left .section__left-top {
     width: 100%;
+    margin: 0 auto;
   }
   .container section .section__left .section__left-top img {
+    width: 100%;
     border-radius: 0;
+    margin: 0 auto;
   }
   .container section .section__left .section__left-bottom .section__left-bottom-img {
     display: none;

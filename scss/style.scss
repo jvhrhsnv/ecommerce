@@ -501,18 +501,18 @@ footer {
 @media screen and (max-width: 767px) {
     .container {
        width: 100%;      
-        margin: 0;
+        margin: 0 auto;
         // overflow-x: hidden;
         // margin-left: -20px;
         // display: none;
         .navbar {
             padding-left: 10px;
             padding-right: 10px;
-            width: 90%;
+            width: 100%;
             margin: 29px auto;      
             .navbar__left {
                 .navbar-hamburger {
-                    margin-left: 10px;
+                    // margin-left: 10px;
                     div {
                         width: 30px;
                         height: 5px;
@@ -526,7 +526,7 @@ footer {
                 }
             }
             .navbar__right {
-                width: 25%;
+                // width: 25%;
                 .cart {
                     min-width: 370px;
                     margin: 0 auto;
@@ -542,7 +542,8 @@ footer {
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
-            // margin: 0px 10px;           
+            // margin: 0px 10px;
+            margin: 0 auto;           
             padding: 0;
             .section__left {
                 width: 100%;
@@ -552,13 +553,13 @@ footer {
                 // margin: 0;
                 .section__left-top {
                   width: 100%;
-                //   margin: 0 auto;
+                  margin: 0 auto;
                 //   padding: 0;
                 //   background-color: red;        
                    img {
-                    // width: 375px;           
+                    width: 100%;           
                     border-radius: 0;
-                    // margin: 0 auto;
+                    margin: 0 auto;
                    }
                 }
                 .section__left-bottom {
