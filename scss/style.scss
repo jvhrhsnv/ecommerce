@@ -500,13 +500,16 @@ footer {
 
 @media screen and (max-width: 767px) {
     .container {
-        max-width: 767px;        
+       width: 100%;      
         margin: 0;
         // overflow-x: hidden;
-        margin-left: -20px;
+        // margin-left: -20px;
+        // display: none;
         .navbar {
             padding-left: 10px;
-            padding-right: 10px;            
+            padding-right: 10px;
+            width: 90%;
+            margin: 29px auto;      
             .navbar__left {
                 .navbar-hamburger {
                     margin-left: 10px;
@@ -539,7 +542,7 @@ footer {
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
-            margin: 0px 10px;           
+            // margin: 0px 10px;           
             padding: 0;
             .section__left {
                 width: 100%;
@@ -548,13 +551,14 @@ footer {
                 // padding: 0;
                 // margin: 0;
                 .section__left-top {
-                //   width: 375px;
-                  margin: 0 auto;
-                  padding: 0;        
+                  width: 100%;
+                //   margin: 0 auto;
+                //   padding: 0;
+                //   background-color: red;        
                    img {
-                //   width: 375px;           
+                    // width: 375px;           
                     border-radius: 0;
-                    margin: 0 auto;
+                    // margin: 0 auto;
                    }
                 }
                 .section__left-bottom {
@@ -564,6 +568,7 @@ footer {
                 }
             }
             .section__right {
+                // background-color: red;
                 // width: 375px;
                 .section__right-top {
                     margin-top: 24px;
@@ -592,6 +597,7 @@ footer {
                 .section__right-bottom {
                     // display: flex;
                     // flex-direction: column;
+                    // background-color: red;
                     margin: 0 24px;
                     flex-wrap: wrap;
                     .section__right-bottom-left {
