@@ -498,7 +498,7 @@ footer {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (min-width: 360px) {
     .container {
        width: 100%;      
         margin: 0 auto;
@@ -563,6 +563,7 @@ footer {
                    }
                 }
                 .section__left-bottom {
+                    width: 100%;
                     .section__left-bottom-img {
                         display: none;
                     }
@@ -571,6 +572,8 @@ footer {
             .section__right {
                 // background-color: red;
                 // width: 375px;
+                width: 100%;
+                padding: 0 10px;
                 .section__right-top {
                     margin-top: 24px;
                     margin-bottom: 16px;
@@ -599,8 +602,9 @@ footer {
                     // display: flex;
                     // flex-direction: column;
                     // background-color: red;
-                    margin: 0 24px;
+                    // margin: 0 24px;
                     flex-wrap: wrap;
+                    width: 100%;
                     .section__right-bottom-left {
                         width: 100%;
                         margin-bottom: 16px;
