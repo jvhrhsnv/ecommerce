@@ -36,13 +36,13 @@ sectionLeftTop.addEventListener('click', () => {
    footer.classList.toggle('show');
    opacity.classList.toggle('show');
    document.body.style.overflow = 'hidden';
-},2000);
+});
 
 opacity.addEventListener('click', () => {
     footer.classList.toggle('show');
     opacity.classList.toggle('show');
     document.body.style.overflow = '';
-},2000);
+});
 
 
 // Change big photo
@@ -67,4 +67,12 @@ var changeImg = document.querySelector('.change-img');
 
 
 // show message in cart
+
+var cart = document.querySelector('.cart');
+var smallCart = document.querySelector('.navbar__right-cart');
+
+smallCart.addEventListener('click', () => {
+ cart.classList.toggle('show-cart');
+});
+
 

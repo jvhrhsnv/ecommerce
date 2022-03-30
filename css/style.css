@@ -653,6 +653,10 @@ footer .section__left .section__left-bottom .section__left-bottom-img img:active
   display: flex;
 }
 
+.show-cart {
+  display: none;
+}
+
 @media screen and (max-width: 767px) and (min-width: 360px) {
   .container {
     width: 100%;
