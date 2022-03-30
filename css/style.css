@@ -168,6 +168,10 @@
   scroll-behavior: smooth;
 }
 
+.container .navbar .navbar__right .cart::-webkit-scrollbar {
+  width: 0px;
+}
+
 .container .navbar .navbar__right .cart .cart-empty .cart-p {
   color: #1D2026;
   margin-bottom: 27px;
