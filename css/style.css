@@ -166,6 +166,11 @@
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .container .navbar .navbar__right .cart::-webkit-scrollbar {
