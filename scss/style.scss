@@ -17,6 +17,12 @@
     margin: 0 auto;
     // START navbar
     position: relative;
+    #mySidepanel {
+        display: none;
+    }
+    .openbtn {
+        display: none;
+    }
     .navbar {
         // width: 1110px;
         height: 50px;
@@ -505,10 +511,7 @@ footer {
 @media screen and (max-width: 767px) and (min-width: 360px) {
     .container {
        width: 100%;      
-        margin: 0 auto;
-        // overflow-x: hidden;
-        // margin-left: -20px;
-        // display: none;
+        margin: 0 auto;        
         .navbar {
             padding-left: 10px;
             padding-right: 10px;
@@ -524,6 +527,7 @@ footer {
                         margin-bottom: 5px;
                     }
                 } 
+                              
                 width: 50%;
                 .navbar__left-section {
                     display: none;

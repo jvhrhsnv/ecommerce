@@ -14,7 +14,6 @@ function numberPlus() {
     });
 }
 function numberMinus() {
-    // var showNumber = cartNumber.value;
     counterMinus.addEventListener('click', () => {
        if (inputValue.value > 0) {
         var newMinus = +inputValue.value - 1;
@@ -23,7 +22,6 @@ function numberMinus() {
        }
       
     });
-    // return showNumber;
 }
 numberPlus();
 numberMinus();
@@ -80,4 +78,3 @@ var smallCart = document.querySelector('.navbar__right-cart');
 smallCart.addEventListener('click', () => {
  cart.classList.toggle('show-cart');
 });
-

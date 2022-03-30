@@ -22,6 +22,14 @@
   position: relative;
 }
 
+.container #mySidepanel {
+  display: none;
+}
+
+.container .openbtn {
+  display: none;
+}
+
 .container .navbar {
   height: 50px;
   font-family: kumbhSansRegular;
