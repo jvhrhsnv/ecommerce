@@ -3,12 +3,14 @@ var counterPlus = document.querySelector('.counter-plus'),
     inputValue = document.querySelector('#input-value'),
     cartNumber = document.querySelector('cart-number-old');
 
+
+
 function numberPlus() {
     var i = 0;
     counterPlus.addEventListener('click', () => {
        var newPlus = new Number(inputValue.value) + 1;
        inputValue.value = newPlus;
-       cartNumber.value = inputValue.value;
+       cartNumber.value = +inputValue.value;
     });
 }
 function numberMinus() {
@@ -23,7 +25,6 @@ function numberMinus() {
 }
 numberPlus();
 numberMinus();
-
 
 
 // popup
@@ -44,7 +45,7 @@ opacity.addEventListener('click', () => {
 },2000);
 
 
-// Change bi photo
+// Change big photo
 var sectionLeft = document.querySelector('.section__left');
 sectionLeft.addEventListener('click', (e) => {
 var tapImg1 = document.querySelector('.tap-img1');
@@ -63,3 +64,7 @@ var changeImg = document.querySelector('.change-img');
         changeImg.setAttribute('src', 'images/image-product-4.jpg');
    }
 });
+
+
+// show message in cart
+
