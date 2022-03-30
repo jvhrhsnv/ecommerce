@@ -8,24 +8,30 @@ var counterPlus = document.querySelector('.counter-plus'),
 function numberPlus() {
     var i = 0;
     counterPlus.addEventListener('click', () => {
-       var newPlus = new Number(inputValue.value) + 1;
+       var newPlus = +(inputValue.value) + 1;
        inputValue.value = newPlus;
-       cartNumber.value = +inputValue.value;
+       cartNumber.value = inputValue.value;
     });
 }
 function numberMinus() {
+    // var showNumber = cartNumber.value;
     counterMinus.addEventListener('click', () => {
        if (inputValue.value > 0) {
-        var newMinus = inputValue.value - 1;
+        var newMinus = +inputValue.value - 1;
         inputValue.value = newMinus;
-        cartNumber.value = inputValue.value;
+        cartNumber.value = inputValue.value;        
        }
       
     });
+    // return showNumber;
 }
 numberPlus();
 numberMinus();
 
+var btn = document.querySelector('.section__right-bottom-right');
+btn.addEventListener('click', () => {
+    console.log(cartNumber.value = inputValue.value);
+});
 
 // popup
 var sectionLeftTop = document.querySelector('.section__left-top');
@@ -74,5 +80,4 @@ var smallCart = document.querySelector('.navbar__right-cart');
 smallCart.addEventListener('click', () => {
  cart.classList.toggle('show-cart');
 });
-
 
