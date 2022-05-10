@@ -18,7 +18,7 @@ function numberMinus() {
        if (inputValue.value > 0) {
         var newMinus = +inputValue.value - 1;
         inputValue.value = newMinus;
-        cartNumber.value = inputValue.value;        
+        cartNumber.value = inputValue.value;      
        }
       
     });
